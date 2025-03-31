@@ -22,10 +22,10 @@ The **Anaglyph Generator** is implemented in **x86-64bit assembly** in the **Int
 nasm -F dwarf -f elf64 Biblioteca.asm
 ```
 ```bash
-nasm -F dwarf -f elf64 Anaglyph-Generator.asm
+nasm -F dwarf -f elf64 Anaglyph_Gen.asm
 ```
 ```bash
-ld Anaglyph-Generator.o Biblioteca.o -o Anaglyph
+ld Anaglyph_Gen.o Biblioteca.o -o
 ```
 
 
@@ -33,9 +33,9 @@ ld Anaglyph-Generator.o Biblioteca.o -o Anaglyph
 ## Execution
 
 ```bash
-./Anaglyph C [left_image.bmp] [right_image.bmp] [final_anaglyph_desired_name.bmp]
+./Anaglyph_Gen C [left_image.bmp] [right_image.bmp] [final_anaglyph_desired_name.bmp]
 ```
 ```bash
-./Anaglyph M [left_image.bmp] [right_image.bmp] [final_anaglyph_desired_name.bmp]
+./Anaglyph_Gen M [left_image.bmp] [right_image.bmp] [final_anaglyph_desired_name.bmp]
 ```
  
